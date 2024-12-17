@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model PriceHistory {
+  id        Int      @id @default(autoincrement())
+  token     String
+  price     Float
+  timestamp DateTime @default(now())
+
+  @@index([token, timestamp])
+}
+
+model Alert {
+  id               Int      @id @default(autoincrement())
+  symbol           String
+  thresholdPercent Float
+  timeframeMinutes Int
+  createdAt        DateTime @default(now())
+  active           Boolean  @default(true)
+} 
