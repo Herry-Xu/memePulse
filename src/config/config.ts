@@ -8,5 +8,5 @@ export const config = {
         WIF: 'EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm',
         BONK: 'DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263'
     },
-    updateInterval: 60000, // 1 minute
+    updateInterval: 15 * 1000, // 15 seconds
 }; 

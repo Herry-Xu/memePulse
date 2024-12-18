@@ -1,7 +1,19 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
+
+# Environment variables
 .env
-*.log
-.DS_Store
+.env.test
+
+# Database
 prisma/*.db
-prisma/*.db-journal 
+prisma/*.db-journal
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
