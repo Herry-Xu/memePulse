@@ -87,7 +87,7 @@ export class AlertService {
 
                     await this.prisma.alert.update({
                         where: { id: alert.id },
-                        data: { 
+                        data: {
                             active: false,
                             status: 'triggered',
                             triggeredAt: now,
@@ -122,4 +122,4 @@ export class AlertService {
             }
         });
     }
-} 
+}

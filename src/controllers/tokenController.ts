@@ -218,4 +218,4 @@ export class TokenController {
             return res.status(500).json({ error: 'Failed to fetch token stats' });
         }
     }
-} 
+}

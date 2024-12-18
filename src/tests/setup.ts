@@ -15,4 +15,4 @@ jest.mock('../services/birdeyeService', () => ({
             priceChangePercent: 5.0
         }))
     }
-})); 
+}));
