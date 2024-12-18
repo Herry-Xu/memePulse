@@ -163,4 +163,4 @@ describe('Alert Service Tests', () => {
             expect(inactiveAlerts).toHaveLength(0);
         });
     });
-}); 
+});

@@ -1,71 +1,74 @@
-Solana Memecoin Monitor
-======================
+# Solana Memecoin Monitor
 
 A real-time price monitoring and alert system for Solana memecoins.
 
-Prerequisites
-------------
-• Node.js (v16+)
-• Yarn
-• SQLite
+## Prerequisites
 
-Quick Start
-----------
+- Node.js (v16+)
+- Yarn
+- SQLite
+
+## Quick Start
+
 1. Clone and install:
-```
-   git clone https://github.com/yourusername/solana-memecoin-monitor.git
-   cd solana-memecoin-monitor
-   yarn install
+```bash
+git clone https://github.com/yourusername/solana-memecoin-monitor.git
+cd solana-memecoin-monitor
+yarn install
 ```
 
 2. Set up environment:
-   Create a .env file with:
-```
-   PORT=3000
-   BIRDEYE_API_KEY=your_api_key_here
-   DATABASE_URL="file:./dev.db"
+```bash
+# Create .env file with:
+PORT=3000
+BIRDEYE_API_KEY=your_api_key_here
+DATABASE_URL="file:./dev.db"
 ```
 
 3. Initialize database:
-```
-   yarn prisma generate
-   yarn prisma migrate dev
+```bash
+yarn prisma generate
+yarn prisma migrate dev
 ```
 
 4. Start server:
-```
-   yarn dev
-```
-
-Available Services
-----------------
-• API: http://localhost:3000
-• Swagger Docs: http://localhost:3000/api-docs
-• WebSocket Updates: ws://localhost:3000
-
-Database Management
------------------
-• View/Edit database (Opens Prisma Studio at http://localhost:5555):
-```
-   yarn prisma studio
-```
-• Reset database:
-```
-   yarn prisma migrate reset
-```
-• Update schema:
-```
-   yarn prisma migrate dev
+```bash
+yarn dev
 ```
 
-Development Commands
-------------------
-• Start dev server:
+## Available Services
+
+- API: http://localhost:3000
+- Swagger Docs: http://localhost:3000/api-docs
+- WebSocket Updates: ws://localhost:3000
+
+## Database Management
+
+View/Edit database:
+```bash
+yarn prisma studio  # Opens Prisma Studio at http://localhost:5555
 ```
-   yarn dev
+
+Reset database:
+```bash
+yarn prisma migrate reset
 ```
-• Run tests:
+
+Update schema:
+```bash
+yarn prisma migrate dev
 ```
-   yarn test
+
+## Development Commands
+
+Start dev server:
+```bash
+yarn dev
 ```
-• View API docs: Visit http://localhost:3000/api-docs
+
+Run tests:
+```bash
+yarn test
+```
+
+View API docs: http://localhost:3000/api-docs
